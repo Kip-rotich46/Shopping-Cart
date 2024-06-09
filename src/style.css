@@ -9,6 +9,15 @@ body{
     font-family: sans-serif;
 }
 
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .navbar{
     padding: 25px 64px;
     background-color: #212529;
@@ -16,6 +25,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -47,7 +57,7 @@ body{
     grid-template-columns: repeat(4, 223px);
     gap: 30px;
     justify-content: center;
-
+    margin-bottom: 20px;
 }
 
 .shop .item{   
@@ -55,7 +65,12 @@ body{
     border-radius: 4px;    
 }
 
-.shop .item .details{
+.item img{
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+.details{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -69,12 +84,20 @@ body{
     align-items: center;
 }
 
-.shop .item .details .price-quantity .buttons{
+/* Buttons */
+.buttons{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 8px;
     font-size: 16px;
+    margin-left: 5px;
+}
+
+/* icons */
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
 }
 
 .bi-dash-lg{
@@ -86,6 +109,68 @@ body{
     font-weight: bold;
 }
 
+/* cart.html styles */
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.HomeBtn, .removeAll, .checkout {
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout{
+    background-color: green;
+    font-weight: bold;
+}
+
+.removeAll{
+    background-color: red;
+    font-weight: bold;
+}
+
+/* cart styles */
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.cart-item{
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+}
+
+.title-price-x{
+    display: flex;
+    margin: 5px;
+    width: 195px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: #212529;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
 /* Media Queries */
 @media (max-width: 1000px){
     .shop{
