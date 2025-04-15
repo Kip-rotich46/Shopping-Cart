@@ -2,6 +2,9 @@
 
 This documentation provides an overview of the JavaScript code used to implement a simple shopping cart system. The system includes functionality to display products, add items to the cart, update item quantities, remove items, and calculate the total amount.
 
+##Live Demo
+https://kip-rotich46.github.io/Shopping-Cart/
+
 ## Elements and Initial Setup
 
 ### HTML Elements
